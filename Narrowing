@@ -1,0 +1,11 @@
+class Narrowing{
+	public static void main(String[] args){
+	double d =112.34;
+	float f = (float)d;
+	long li = (long)f;
+	int i= (int)li;
+	System.out.println(d+"-"+f+"-"+li+"-");
+
+
+	}
+}

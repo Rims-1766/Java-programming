@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Switchdemo{
+	public static void main(String[] args){
+	Scanner sc= new Scanner(System.in);
+		int val= sc.nextInt();
+		switch(val){
+			case 1,2,3:
+			case 4:
+				System.out.println(val);
+				break;
+			default:
+				System.out.println("default");
+
+
+		}
+	}
+}

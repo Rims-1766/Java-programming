@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class calculator{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("welcome to calculator");
+		System.out.println("1.Addition/n 2.subtraction /n 3.multiplication/n 4.Division/n");
+		System.out.println("what do you want to calculate");
+		int val=sc.nextInt();
+		System.out.println("enter two values");
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		switch(val){
+		case 1:
+			System.out.println(x+y);
+			break;
+		case 2:
+			System.out.println(x-y);
+			break;
+		case 3:
+			System.out.println(x*y);
+			break;
+		case 4:
+			System.out.println(x/y);
+			break;
+		default:
+			System.out.println("thankyou");
+			break;
+
+		}
+
+	}
+}

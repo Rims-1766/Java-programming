@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Indexelement{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int size=sc.nextInt();
+		int flag = 0;
+		int a[]=new int[size];
+		int value=sc.nextInt();
+		for(int i=1;i < a.length;i++){
+				a[i]=sc.nextInt();
+			if(value == a[i]){
+				flag = i;
+				break;
+			}
+		}
+
+		if(flag == 0){
+			System.out.println("not found");
+		}else{
+			System.out.println("Found at index value"+flag);
+		}
+	}
+}

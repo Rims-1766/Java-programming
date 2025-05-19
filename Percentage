@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Percentage{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+	    float total=0;
+		System.out.println("percentage of CBSE marks:");
+		System.out.println("enter total marks:");
+		int total_marks = sc.nextInt();
+		System.out.println("Enter marks of subject1:");
+		float s1= sc.nextFloat();
+		total = total +s1;
+		System.out.println("Enter marks of subject2:");
+		float s2= sc.nextFloat();
+		total = total +s2;
+		System.out.println("Enter marks of subject3:");
+		float s3= sc.nextFloat();
+		total = total +s3;
+		System.out.println("Enter marks of subject4:");
+		float s4= sc.nextFloat();
+		total = total +s4;
+		System.out.println("Enter marks of subject5:");
+		float s5= sc.nextFloat();
+		total = total +s5;
+		float grandtotal= total * 100/(total_marks*5);
+		System.out.println("your toatl percentage is ="+grandtotal+"percent");
+
+
+
+	}
+}
